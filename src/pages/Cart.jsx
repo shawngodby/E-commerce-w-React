@@ -54,6 +54,10 @@ function Cart({ cart, changeQuantity }) {
                                 <span>Tax</span>
                                 <span>$1.00</span>
                             </div>
+                            <div className="total__item total__price">
+                                <span>Total</span>
+                                <span>$10.00</span>
+                            </div>
                             <button
                                 className="btn btn__checkout no-cursor"
                                 onClick={() => alert(`Checkout is not available in this demo`)}>

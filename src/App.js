@@ -16,7 +16,7 @@ function App() {
   }
 
   function changeQuantity(book, quantity) {
-    console.log(book, quantity)
+    console.log(...cart, book, quantity)
   }
 
   useEffect(() => {
