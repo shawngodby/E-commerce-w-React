@@ -30,7 +30,6 @@ function App() {
 
   function removeItem(item) {
     setCart(cart.filter(book => book.id !== item.id))
-    console.log('removeItem', item)
   }
 
   function numberOfItems() {
@@ -42,7 +41,6 @@ function App() {
   }
 
   useEffect(() => {
-    console.log(cart);
   }, [cart]);
 
   return (
