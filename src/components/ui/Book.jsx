@@ -5,11 +5,14 @@ import Rating from './Rating';
 import Price from './Price';
 
 const Book = ({ book }) => {
+    function imageLoaded(){
+        console.log('imageLoaded')
+    }
     return (
         <div className="book">
             <Link to={`/books/${book.id}`}>
                 <figure className="book__img--wrpper">
-                    <img src={book.url} alt="" className="book__img" />
+                    <img src={book.url} alt="" className="book__img" onLoad={imageLoaded} />
                 </figure>
             </Link>
             <div className="book__title">
@@ -18,7 +21,7 @@ const Book = ({ book }) => {
                 </Link>
             </div>
             <Rating rating={book.rating} />
-            ,<Price salePrice={book.salePrice} originalPrice={book.originalPrice} />
+            <Price salePrice={book.salePrice} originalPrice={book.originalPrice} />
         </div>
     );
 };
