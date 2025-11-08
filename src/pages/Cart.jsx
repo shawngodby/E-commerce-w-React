@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import EmptyCart from "../assets/empty_cart.svg";
 import { Link } from "react-router-dom";
 
@@ -12,9 +11,6 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
     });
     return price;
 };
-const subTotal = () => {
-    return (total() * 0.9);
-}
 
 return (
         <div id="books__body">
